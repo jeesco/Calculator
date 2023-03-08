@@ -1,9 +1,10 @@
 import './App.css';
-import { useState } from 'react';
 import logo from './images/Jeesco.png'
 import Button from './components/Button';
 import Input from './components/Input';
 import ClearButton from './components/ClearButton';
+import { useState } from 'react';
+import { evaluate } from 'mathjs';
 
 function App() {
 
@@ -13,6 +14,13 @@ function App() {
     setInput(input + val)
   }
 
+  const calculateResult = () => {
+    if(input) {
+      setInput(evaluate(input))
+    } else {
+      alert('please enter a valid input')
+    }
+  }
 
 
 
@@ -42,7 +50,7 @@ function App() {
           <Button handleClick={addInput}>*</Button>
         </div>
         <div className='row'>
-          <Button handleClick={addInput}>=</Button>
+          <Button handleClick={calculateResult}>=</Button>
           <Button handleClick={addInput}>0</Button>
           <Button handleClick={addInput}>.</Button>
           <Button handleClick={addInput}>/</Button>
