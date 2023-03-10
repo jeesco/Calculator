@@ -3,7 +3,7 @@
   font-size: 1.6em;
   display: flex;
   flex: 1;
-  background-color: #ac0246;
+  background-color: #EE9B00;
   margin-top: 8px;
   justify-content: center;
   align-items: center;
@@ -11,12 +11,11 @@
   color: white;
   border: 2px solid white;
   cursor: pointer;
-  box-shadow: -1px 4px 1px 1px white;
-  border-radius: 45px;
+  border-radius: 25px;
   user-select: none;
   transition: background-color 0.1s linear;
 }
 
 .clear-button:hover {
-  background-color: #ebb000;
+  background-color: #BB3E03;
 }
