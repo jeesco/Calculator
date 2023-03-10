@@ -4,7 +4,7 @@
   display: flex;
   flex: 1;
   background-color: #EE9B00;
-  margin-top: 8px;
+  margin: 8px 4px 0px 4px;
   justify-content: center;
   align-items: center;
   font-weight: bold;
@@ -13,9 +13,13 @@
   cursor: pointer;
   border-radius: 25px;
   user-select: none;
-  transition: background-color 0.1s linear;
+  transition: transform 0.1s ease;
 }
 
 .clear-button:hover {
+  transform: scale(1.03);
+}
+
+.clear-button:active {
   background-color: #BB3E03;
 }

@@ -13,11 +13,15 @@
   margin: 4px;
   cursor: pointer;
   user-select: none;
-  transition: background-color 0.1s linear;
+  transition: transform 0.1s linear;
+}
+
+.button-container:active {
+  background-color: #00494b;
 }
 
 .button-container:hover {
-  background-color: #00494b;
+  transform: scale(1.03);
 }
 
 .operator {
@@ -25,7 +29,10 @@
   transition: background-color 0.3s linear;
 }
 
-
 .operator:hover {
+  transform: scale(1.03);
+}
+
+.operator:active {
   background-color: #fa686d;
 }

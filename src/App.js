@@ -22,7 +22,7 @@ function App() {
     }
   };
 
-  const deleteChar = val => {
+  const deleteChar = () => {
     setInput(input.substr(0, input.length - 1))
   }
 

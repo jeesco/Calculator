@@ -29,8 +29,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 11px;
+  font-size: 9px;
   color: #f2f2f2;
+  margin-left: 11px;
 }
 
 .logo-container {
@@ -40,5 +41,5 @@
 }
   
 .logo {
-  height: 20px;
+  height: 18px;
 }
